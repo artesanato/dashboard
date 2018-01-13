@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema de gerenciamento de paciente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body class="container">
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-search navbar-light bg-light" style="margin-bottom:63px;background-color:rgb(241,247,252);">
+            <div class="container-fluid"><a class="navbar-brand" href="#"><img src="http://thaizcarvalho.com.br/layout/img/icone-psicoterapeuta.png" width="90"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="crudPaciente.html">Paciente </a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="crudConsulta.html">Consulta </a></li>
+                    </ul>
+                    <form class="form-inline mr-auto" target="_self">
+                        <div class="form-group"><label for="search-field"></label></div>
+                    </form><a class="btn btn-light action-button" role="button" href="index.html">Sair </a></div>
+    </div>
+    </nav>
+    </div>
+    <ul class="nav nav-tabs container">
+        <li class="nav-item"><a class="nav-link active" href="formPaciente-read-info.html">Informações Pessoais</a></li>
+        <li class="nav-item"><a class="nav-link" href="formPaciente-read-contatos.html">Contatos </a></li>
+        <li class="nav-item"><a class="nav-link" href="formPaciente-read-consultas.html">Consultas </a></li>
+    </ul>
+    <div>
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group col-12"><label class="form-control-label">Nome <span style="color:red;">* </span></label><input class="form-control form-control" type="text" readonly="" placeholder="Maria da Silva"></div>
+                            <div class="form-group col-6"><label class="form-control-label">Nome da mãe<span style="color:red;">* </span></label><input class="form-control" type="text" disabled="" placeholder="Joaquina da Silva"></div>
+                            <div class="form-group col-6"><label class="form-control-label">Nome da pai</label><input class="form-control" type="text" readonly="" placeholder="João Ap da Silva"></div>
+                            <div class="form-group col-6"><label class="form-control-label">CPF </label><input class="form-control" type="text" readonly="" placeholder="483.875.451-48"></div>
+                            <div class="form-group col-6"><label class="form-control-label">RG </label><input class="form-control" type="text" readonly="" placeholder="41.101.189-8"></div>
+                            <div class="form-group col-6"><label class="form-control-label">Numero SUS <span style="color:red;"> </span></label><input class="form-control" type="text" readonly="" placeholder="12356789"></div>
+                            <div class="form-group col-6"><label class="form-control-label">Data Nascimento</label><input class="form-control" type="text" readonly="" placeholder="24/06/1995"></div>
+                            <div class="form-group col-4"><label class="form-control-label">Estado Civil</label><input class="form-control" type="text" readonly="" placeholder="Solteiro(a)"></div>
+                            <div class="form-group col-4"><label class="form-control-label">Raça </label><input class="form-control" type="text" readonly="" placeholder="Branco(a)"></div>
+                            <div class="form-group col-4"><label class="form-control-label">Sexo <span style="color:red;">* </span></label>
+                                <div class="d-flex align-items-end">
+                                    <div class="form-check form-check-inline"><label class="form-check-label custom-control custom-checkbox" for="m"><input class="form-check-input" type="checkbox" name="exampleRadios" value="masculino" disabled="" id="m"> Masculino</label></div>
+                                    <div class="form-check form-check-inline"><label class="form-check-label custom-control custom-checkbox" for="f"><input class="form-check-input" type="checkbox" name="exampleRadios" value="feminino" disabled="" checked="" id="f"> Feminino</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-6"><label class="form-control-label">Logradouro <span style="color:red;">* </span></label><input class="form-control form-control" type="text" readonly="" placeholder="Rua 1 de maio"></div>
+                            <div class="form-group col-6"><label class="form-control-label">CEP <span style="color:red;">* </span></label><input class="form-control form-control" type="text" readonly="" placeholder="15.900-000"></div>
+                            <div class="form-group col-6"><label class="form-control-label">Cidade </label><input class="form-control form-control" type="text" readonly="" placeholder="Taquaritinga"></div>
+                            <div class="form-group col-6"><label class="form-control-label">Estado </label><input class="form-control form-control" type="text" readonly="" placeholder="São Paulo/SP"></div>
+                        </div>
+                    </fieldset>
+                    <div class="d-flex justify-content-end"><a class="btn btn-secondary" role="button" href="crudPaciente.html" style="margin-right:16px;">Voltar </a><a class="btn btn-primary" role="button" href="crudPaciente.html">Editar </a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
